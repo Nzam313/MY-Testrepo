@@ -1,0 +1,397 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+
+{
+int num1,num2,sum;
+printf("Enter 2 number");            /* SUM OF 2 NO.S */
+scanf("%d%d",&num1,&num2);
+sum=num1+num2;
+printf("Sum = %d",sum);
+
+return EXIT_SUCCESS;
+}           
+
+--------------*-------------------*-----------------
+
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+
+{
+float num1,num2,num3,avg;
+printf("Enter 3 no.s");
+scanf("%f%f%f",&num1,&num2,&num3");    /* avg of 3 no.s */
+avg =(num1+num2+num3)/3;
+printf("Average = %f",avg);
+
+
+return EXIT_SUCCESS;
+}            
+
+------------------*---------------*------------------
+
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+
+{
+int a=10,b=30,temp;
+temp=a;                                 /* Swaping Technique */
+a=b;
+b=temp;
+printf("a: %d  b: %d, a,b);
+
+return EXIT_SUCCESS;
+}          
+
+-----------------*------------------*--------------------
+
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+float num;
+prinf("Enter a number");
+scanf(%f,&num);
+if(num<0)
+
+{
+printf("Enterd value is negative");                /* if else example */
+}
+
+else
+
+{
+printf("Enterd no is positive");
+}
+
+
+return EXIT_SUCCESS;
+}         
+
+--------------------*------------------------*--------------------
+
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+float num1,num2,ans,choice;
+prinf("Enter 2 number");
+scanf(%f%f,&num1,num2);
+printf("Select an operator + - * / ");
+
+if(choise== +)
+
+{
+ans=num1+num2; 
+printf("ANS : %f",ans);             
+}
+
+else if(choice== -)
+
+{
+ans=num1-num2;
+printf("ANS : %f",ans);
+}
+
+else if(choice== *)
+
+{
+ans=num1*num2;
+printf("ANS : %f",ans);               /* nested if example */
+}
+
+else if(choice== /)
+
+{
+ans=num1/num2;
+printf("ANS : %f",ans);
+}
+
+else
+
+{
+printf("You Enterd a wrong choice");
+}
+
+return EXIT_SUCCESS;
+}      
+  
+------------------------------*-----------------------------*----------------------
+
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+int option;
+printf("Select an option \n 1 for sandwitch \n 2 for burger \n 3 for tea \n 4 for coffe \n);
+scanf("&d",&option);
+switch(option)
+{
+case 1:
+printf("You choose sandwitch");
+break;
+case 2:
+printf("You choose burger");               /* Switch case example */
+break;
+case 3:
+printf("You choose tea");
+break;
+case 4:
+printf("You choose coffe");
+break;
+default:
+printf("Wrong selection");
+}
+
+return EXIT_SUCCESS;
+}
+
+
+------------------*---------------------*-------------------------
+ 
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+int num,i,sum=0;
+printf("Enter a number\n");
+scanf("%d",&num);
+for(i=1;i<=num;i++)                                /* for loop example */
+{
+    sum=sum+i;
+    
+}
+printf("Sum of the number upto %d ",num );
+printf("is %d",sum);
+
+
+return EXIT_SUCCESS;
+}
+
+-------------------------*--------------------*---------------------------
+
+
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+int num,i;
+printf("Enter a value\n");
+scanf("%d",&num);
+printf("Even no upto %d is\n",num);              /* for loop with if condition */
+for(i=2;i<=num;i++)
+{
+    if(i%2==0)
+    {
+        printf("%d\n",i);
+    }
+}
+
+
+return EXIT_SUCCESS;
+}
+
+
+-------------------------*----------------------------*------------------------
+
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+int num,i,flag=0;
+printf("Enter a number\n");
+scanf("%d",&num);
+for(i=2;i<(num/2);i++)
+{
+    if(num%i==0)                             /* to check whether the given no is prime or not */
+    {
+        flag=1;
+        break;
+    }
+}
+if(flag==1)
+{
+    printf("Not a prime no");
+}
+else
+{
+    printf("Prime no");
+}
+
+return EXIT_SUCCESS;
+}
+
+--------------*----------------------*--------------------------
+
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+int num,i,j,k,l;
+printf("Enter a number\n");
+scanf("%d",&num);
+for(i=1;i<=num;i++)                                /* using 2 for loop printing '*' triangle */
+{
+    for(j=0;j<i;j++)
+    {
+     printf("*\t");
+    }
+    printf("\n");
+}
+
+return EXIT_SUCCESS;
+}
+
+----------------*-----------------------*----------------------------
+
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+int num[100],i,limit;
+printf("Enter array limit\n");
+scanf("%d",&limit);
+printf("Enter array values\n");                /* Array program Example */
+for(i=0;i<limit;i++)
+{
+    scanf("%d",&num[i]);
+}
+printf("Enterd values are :\n");
+for(i=0;i<5;i++)
+{
+    printf("%d\t",num[i]);
+}
+
+return EXIT_SUCCESS;
+}
+
+-------------------*---------------------------*-----------------------------
+
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+int num[3][3],i,j;
+printf("Enter 3x3 matrix values\n");                /* Matrix program Example */
+for(i=0;i<3;i++)
+{
+    for(j=0;j<3;j++)
+    {
+        scanf("%d",&num[i][j]);
+    }
+}
+printf("3x3 matrix is:\n\n");
+for(i=0;i<3;i++)
+{
+    for(j=0;j<3;j++);
+    {
+        printf("%d\t",num[i][j]);
+    }
+    printf("\n");
+}
+return EXIT_SUCCESS;
+}
+
+------------------------*-------------------*------------------
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+    void sum();
+    sum();
+
+return EXIT_SUCCESS;                /* function without argument and without return value */
+}
+void sum()
+{
+    int num1,num2,sum;
+    printf("Enter 2 no.s\n");
+    scanf("%d%d",&num1,&num2);
+    sum=num1+num2;
+    printf("Result = %d",sum);
+}
+
+----------------------*----------------------------*-------------------
+
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+{   int num1,num2;
+    printf("Enter 2 no.s\n");
+    scanf("%d%d",&num1,&num2);
+    void sum(int,int);    /* calling function */               /* function with argument without return value */
+    sum(num1,num2);       /* called function */              
+                        
+
+return(0);
+}
+void sum(int a,int b)
+{
+    int sum;
+    
+    sum=a+b;
+    printf("Result = %d",sum);
+}
+
+--------------------------*---------------------------*---------------------------
+
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+{   int num1,num2,c;
+    printf("Enter 2 no.s\n");
+    scanf("%d%d",&num1,&num2);
+    int sum(int,int);  
+    c=sum(num1,num2); 
+    printf("Result = %d",c);              /* function with argument and with return value */
+    
+return(0);
+}
+int sum(int a,int b)
+{
+    int sum;
+    
+    sum=a+b;
+    return sum;
+}
+
+--------------------------*-----------------------------*------------------------------
+
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+{   int c;
+    int sum();  
+    c=sum(); 
+    printf("Result = %d",c);
+    
+return(0);                                /* function without argument with return value */
+}
+int sum()
+{
+    int a,b,sum;
+    printf("Enter 2 no.s\n");
+    scanf("%d%d",&a,&b);
+    sum=a+b;
+    return sum;
+}
+
+
+
+
+
+
+
+#include <stdio.h>
+
+int main()
+{
+char name[20];
+printf("Enter a name\n");                    /*  string example */
+gets(name);
+printf("Enterd name is %s",name);
+    return 0;
+}
+                                                 
